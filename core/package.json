@@ -1,0 +1,25 @@
+{
+  "name": "@bluecateng/eslint-config-core",
+  "version": "0.3.0",
+  "description": "Core BlueCat shareable config",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bluecatengineering/eslint-packages.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "dependencies": {
+    "@bluecateng/eslint-plugin": "^0.3.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-promise": "^4.1.1",
+    "js-yaml": "^3.13.1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 5"
+  }
+}

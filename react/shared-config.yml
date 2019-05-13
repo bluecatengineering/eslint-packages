@@ -1,0 +1,39 @@
+extends:
+  - '@bluecateng/core'
+  - plugin:@bluecateng/react
+  - plugin:jest/recommended
+  - plugin:react/recommended
+  - prettier/react
+
+parser: babel-eslint
+
+plugins:
+  - '@bluecateng'
+  - babel
+  - import
+  - jest
+  - react
+
+env:
+  browser: true
+  jest: true
+
+globals:
+  jsdom: false
+
+parserOptions:
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+
+settings:
+  react:
+    version: '16'
+
+rules:
+  no-console: warn
+
+  import/first: warn
+
+  react/no-deprecated: warn
+  react/no-unescaped-entities: off

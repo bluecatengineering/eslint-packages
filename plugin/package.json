@@ -1,0 +1,21 @@
+{
+  "name": "@bluecateng/eslint-plugin",
+  "version": "0.3.0",
+  "description": "Custom rule definitions for BlueCat",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bluecatengineering/eslint-packages.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin"
+  ],
+  "peerDependencies": {
+    "eslint": ">= 5"
+  },
+  "dependencies": {
+    "intl-messageformat-parser": "^1.5.1"
+  }
+}

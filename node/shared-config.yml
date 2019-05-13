@@ -1,0 +1,12 @@
+extends:
+  - '@bluecateng/core'
+  - plugin:jest/recommended
+
+plugins:
+  - '@bluecateng'
+  - import
+  - jest
+
+env:
+  node: true
+  jest: true

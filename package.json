@@ -1,0 +1,37 @@
+{
+  "name": "eslint-packages",
+  "version": "0.3.0",
+  "description": "Packages for ESLint",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bluecatengineering/eslint-packages.git"
+  },
+  "devDependencies": {
+    "@bluecateng/git-checks": "^0.1.1",
+    "eslint": "^5.16.0",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
+    "prettier": "^1.17.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "check-git-msg",
+      "pre-push": "check-git-commits"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js}": [
+        "eslint --fix --max-warnings 0",
+        "prettier --write",
+        "git add"
+      ],
+      "*.{md,yml}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  }
+}
