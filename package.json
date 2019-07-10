@@ -1,6 +1,6 @@
 {
   "name": "eslint-packages",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "description": "Packages for ESLint",
   "private": true,
   "repository": {
@@ -9,10 +9,10 @@
   },
   "devDependencies": {
     "@bluecateng/git-checks": "^0.1.1",
-    "eslint": "^5.16.0",
-    "husky": "^2.2.0",
-    "lint-staged": "^8.1.6",
-    "prettier": "^1.17.1"
+    "eslint": "^6.0.1",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.18.2"
   },
   "husky": {
     "hooks": {
@@ -22,7 +22,6 @@
     }
   },
   "lint-staged": {
-    "linters": {
       "*.{js}": [
         "eslint --fix --max-warnings 0",
         "prettier --write",
@@ -32,6 +31,5 @@
         "prettier --write",
         "git add"
       ]
-    }
   }
 }

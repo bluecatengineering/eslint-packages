@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/eslint-plugin",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "description": "Custom rule definitions for BlueCat",
   "license": "ISC",
   "main": "index.js",
@@ -16,6 +16,6 @@
     "eslint": ">= 5"
   },
   "dependencies": {
-    "intl-messageformat-parser": "^1.5.1"
+    "intl-messageformat-parser": "^2.0.1"
   }
 }

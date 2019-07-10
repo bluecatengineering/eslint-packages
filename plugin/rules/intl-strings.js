@@ -15,26 +15,22 @@ const fileChanged = path => {
 	return false;
 };
 
-const extractParams = (pattern, params) => {
-	const elements = pattern.elements;
-	if (elements) {
-		elements.forEach(e => {
-			if (e.type === 'argumentElement') {
-				params.push(e.id);
-				const options = e.format ? e.format.options : null;
-				if (options) {
-					options.forEach(o => extractParams(o.value, params));
-				}
+const extractParams = (elements, params) => {
+	elements.forEach(e => {
+		if (e.type !== 0) {
+			params.push(e.value);
+			if (e.options) {
+				Object.values(e.options).forEach(o => extractParams(o.value, params));
 			}
-		});
-	}
+		}
+	});
 	return params;
 };
 
 const loadStrings = filePath => {
 	keys = {};
 	const strings = yaml.safeLoad(fs.readFileSync(filePath));
-	Object.keys(strings).forEach(k => (keys[k] = strings[k] ? extractParams(parser.parse(strings[k]), []) : []));
+	Object.entries(strings).forEach(([k, v]) => (keys[k] = v ? extractParams(parser.parse(v), []) : []));
 };
 
 module.exports = {
