@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/eslint-config-react",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "BlueCat shareable config for React",
   "license": "ISC",
   "main": "index.js",
@@ -13,12 +13,12 @@
     "eslintconfig"
   ],
   "dependencies": {
-    "@bluecateng/eslint-config-core": "^0.4.1",
+    "@bluecateng/eslint-config-core": "^0.4.2",
     "babel-eslint": "^10.0.2",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-jest": "^22.7.2",
-    "eslint-plugin-react": "^7.14.2",
-    "eslint-plugin-react-hooks": "^1.6.1",
+    "eslint-plugin-jest": "^22.15.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "js-yaml": "^3.13.1"
   },
   "peerDependencies": {
