@@ -40,7 +40,7 @@ module.exports = {
 			ImportDeclaration(node) {
 				const modulePath = node.source.value;
 				if (/(^\.|\.\.)\/strings$/.test(modulePath)) {
-					const filePath = path.join(dirname, modulePath, 'en.strings.yml');
+					const filePath = path.join(dirname, modulePath, 'en.strings.yaml');
 					if (fileChanged(filePath)) {
 						loadStrings(filePath);
 					}

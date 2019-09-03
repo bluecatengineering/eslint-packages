@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/eslint-plugin",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "Custom rule definitions for BlueCat",
   "license": "ISC",
   "main": "index.js",
