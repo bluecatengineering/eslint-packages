@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "@bluecateng/eslint-plugin": "^0.4.2",
-    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-prettier": "^6.2.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-promise": "^4.2.1",
     "js-yaml": "^3.13.1"
