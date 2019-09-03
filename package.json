@@ -1,6 +1,5 @@
 {
   "name": "eslint-packages",
-  "version": "0.4.2",
   "description": "Packages for ESLint",
   "private": true,
   "repository": {
@@ -11,6 +10,7 @@
     "@bluecateng/git-checks": "^0.1.1",
     "eslint": "^6.1.0",
     "husky": "^3.0.3",
+    "lerna": "^3.16.4",
     "lint-staged": "^9.2.1",
     "prettier": "^1.18.2"
   },
