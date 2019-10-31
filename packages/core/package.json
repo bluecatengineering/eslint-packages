@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/eslint-config-core",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "Core BlueCat shareable config",
   "license": "ISC",
   "main": "index.js",
@@ -13,8 +13,8 @@
     "eslintconfig"
   ],
   "dependencies": {
-    "@bluecateng/eslint-plugin": "^0.6.0",
-    "eslint-config-prettier": "^6.2.0",
+    "@bluecateng/eslint-plugin": "^1.0.0",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-promise": "^4.2.1",
     "js-yaml": "^3.13.1"
