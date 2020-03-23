@@ -7,12 +7,12 @@
     "url": "git@github.com:bluecatengineering/eslint-packages.git"
   },
   "devDependencies": {
-    "@bluecateng/git-checks": "^0.2.0",
-    "eslint": "^6.7.2",
-    "husky": "^3.1.0",
-    "lerna": "^3.19.0",
-    "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1"
+    "@bluecateng/git-checks": "^0.3.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.0.8",
+    "prettier": "^2.0.1"
   },
   "husky": {
     "hooks": {
@@ -24,12 +24,10 @@
   "lint-staged": {
     "*.{js}": [
       "eslint --fix --max-warnings 0",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.{md,yml}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
