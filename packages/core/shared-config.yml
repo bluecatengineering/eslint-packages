@@ -5,6 +5,7 @@ extends:
 
 plugins:
   - '@bluecateng'
+  - babel
   - import
   - promise
 
@@ -38,7 +39,6 @@ rules:
   no-undef-init: warn
   no-unmodified-loop-condition: error
   no-unneeded-ternary: warn
-  no-unused-expressions: warn
   no-unused-vars: warn
   no-useless-call: error
   no-useless-computed-key: warn
@@ -58,7 +58,10 @@ rules:
 
   no-console: off
   no-control-regex: off
+  no-unused-expressions: off
   no-useless-escape: off
+
+  babel/no-unused-expressions: warn
 
   import/export: error
   import/extensions: [warn, never, {less: always}]
