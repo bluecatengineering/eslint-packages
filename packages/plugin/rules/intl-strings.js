@@ -90,25 +90,25 @@ module.exports = {
 						return;
 					}
 					const arg1 = args[1];
-					if (arg1.type !== 'ObjectExpression') {
-						context.report(arg1, 'The second argument must be an object literal');
-						return;
-					}
-					const found = arg1.properties.map(p => {
-						if (p.type !== 'Property') {
-							context.report(p, 'Must specify explicit key/value pairs');
-							return null;
+					if (arg1.type === 'ObjectExpression') {
+						const found = arg1.properties.map(p => {
+							if (p.type !== 'Property') {
+								context.report(p, 'Must specify explicit key/value pairs');
+								return null;
+							}
+							const key = p.key;
+							const name = key.name;
+							if (!params.includes(name)) {
+								context.report(key, 'Parameter not found in template');
+							}
+							return name;
+						});
+						const missing = params.filter(p => !found.includes(p));
+						if (missing.length !== 0) {
+							context.report(arg1, 'Missing template arguments: ' + missing.join(', '));
 						}
-						const key = p.key;
-						const name = key.name;
-						if (!params.includes(name)) {
-							context.report(key, 'Parameter not found in template');
-						}
-						return name;
-					});
-					const missing = params.filter(p => !found.includes(p));
-					if (missing.length !== 0) {
-						context.report(arg1, 'Missing template arguments: ' + missing.join(', '));
+					} else if (arg1.type !== 'Identifier') {
+						context.report(arg1, 'The second argument must be either an object literal or an identifier');
 					}
 				}
 			},
