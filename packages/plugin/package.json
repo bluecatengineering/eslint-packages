@@ -16,6 +16,6 @@
     "eslint": ">= 5"
   },
   "dependencies": {
-    "intl-messageformat-parser": "^6.0.7"
+    "intl-messageformat-parser": "^6.0.12"
   }
 }
