@@ -8,10 +8,10 @@
   },
   "devDependencies": {
     "@bluecateng/git-checks": "^0.3.0",
-    "eslint": "^7.10.0",
+    "eslint": "^7.12.1",
     "husky": "^4.3.0",
     "lerna": "^3.22.1",
-    "lint-staged": "^10.4.0",
+    "lint-staged": "^10.5.1",
     "prettier": "^2.1.2"
   },
   "husky": {
