@@ -36,6 +36,7 @@ rules:
 
   import/first: warn
 
+  react/jsx-uses-react: off
   react/no-deprecated: warn
   react/no-unescaped-entities: off
   react/react-in-jsx-scope: off
