@@ -2,5 +2,10 @@
   "version": "1.5.0",
   "packages": [
     "packages/*"
-  ]
+  ],
+  "command": {
+    "version": {
+      "message": "Publish %s"
+    }
+  }
 }
