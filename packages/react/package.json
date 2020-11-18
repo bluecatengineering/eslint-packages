@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/eslint-config-react",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "BlueCat shareable config for React",
   "license": "ISC",
   "main": "index.js",
