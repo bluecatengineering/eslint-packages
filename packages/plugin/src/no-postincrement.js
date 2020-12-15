@@ -3,7 +3,7 @@ const forbiddenTypes = {
 	ForStatement: true,
 };
 
-module.exports = {
+export default {
 	meta: {
 		type: 'suggestion',
 		fixable: 'code',

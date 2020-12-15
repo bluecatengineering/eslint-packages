@@ -1,8 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
-const parser = require('intl-messageformat-parser');
-const yaml = require('js-yaml');
+import {parse} from 'intl-messageformat-parser';
+import yaml from 'js-yaml';
 
 let keys, timestamp;
 
@@ -30,10 +30,10 @@ const extractParams = (elements, params) => {
 const loadStrings = filePath => {
 	keys = {};
 	const strings = yaml.safeLoad(fs.readFileSync(filePath));
-	Object.entries(strings).forEach(([k, v]) => (keys[k] = v ? extractParams(parser.parse(v), []) : []));
+	Object.entries(strings).forEach(([k, v]) => (keys[k] = v ? extractParams(parse(v), []) : []));
 };
 
-module.exports = {
+export default {
 	create(context) {
 		const dirname = path.dirname(context.getFilename());
 		return {

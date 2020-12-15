@@ -4,6 +4,9 @@
   "description": "BlueCat shareable config for Node",
   "license": "ISC",
   "main": "index.js",
+  "scripts": {
+    "prepack": "rollup -c"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:bluecatengineering/eslint-packages.git"
@@ -12,10 +15,13 @@
     "eslint",
     "eslintconfig"
   ],
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "dependencies": {
     "@bluecateng/eslint-config-core": "^2.0.0",
-    "eslint-plugin-jest": "^24.1.0",
-    "js-yaml": "^3.14.0"
+    "eslint-plugin-jest": "^24.1.0"
   },
   "peerDependencies": {
     "eslint": ">= 5"

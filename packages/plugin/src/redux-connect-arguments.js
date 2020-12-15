@@ -1,6 +1,6 @@
 const ordinals = ['first', 'second', 'third'];
 
-module.exports = {
+export default {
 	create(context) {
 		let fname;
 
