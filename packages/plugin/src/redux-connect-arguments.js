@@ -2,7 +2,7 @@ const ordinals = ['first', 'second', 'third'];
 
 export default {
 	create(context) {
-		let fname;
+		let connectName;
 
 		function checkArgument(arg, index, expected) {
 			if (arg.type !== 'Identifier') {
@@ -19,15 +19,15 @@ export default {
 			ImportDeclaration(node) {
 				if (node.source.value === 'react-redux') {
 					node.specifiers.forEach(s => {
-						if (s.type === 'ImportSpecifier') {
-							fname = s.local.name;
+						if (s.type === 'ImportSpecifier' && s.imported.name === 'connect') {
+							connectName = s.local.name;
 						}
 					});
 				}
 			},
 
 			CallExpression(node) {
-				if (node.callee.type === 'Identifier' && node.callee.name === fname) {
+				if (node.callee.type === 'Identifier' && node.callee.name === connectName) {
 					const args = node.arguments;
 					if (args.length < 1 || args.length > 4) {
 						context.report(node, 'Must pass one to four arguments');
