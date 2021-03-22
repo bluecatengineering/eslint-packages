@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 import {parse} from 'intl-messageformat-parser';
-import yaml from 'js-yaml';
+import {load} from 'js-yaml';
 
 let keys, timestamp;
 
@@ -29,7 +29,7 @@ const extractParams = (elements, params) => {
 
 const loadStrings = filePath => {
 	keys = {};
-	const strings = yaml.safeLoad(fs.readFileSync(filePath));
+	const strings = load(fs.readFileSync(filePath));
 	Object.entries(strings).forEach(([k, v]) => (keys[k] = v ? extractParams(parse(v), []) : []));
 };
 

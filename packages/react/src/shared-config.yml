@@ -3,7 +3,6 @@ extends:
   - plugin:@bluecateng/react
   - plugin:jest/recommended
   - plugin:react/recommended
-  - prettier/react
 
 parser: babel-eslint
 

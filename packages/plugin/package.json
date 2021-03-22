@@ -20,10 +20,12 @@
     "README.md"
   ],
   "peerDependencies": {
-    "eslint": ">= 5",
-    "js-yaml": ">= 3"
+    "eslint": ">= 5"
+  },
+  "dependencies": {
+    "js-yaml": "^4.0.0"
   },
   "devDependencies": {
-    "intl-messageformat-parser": "^6.0.18"
+    "intl-messageformat-parser": "^6.4.3"
   }
 }
