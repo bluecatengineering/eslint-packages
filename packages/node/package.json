@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "@bluecateng/eslint-config-core": "^2.1.0",
-    "eslint-plugin-jest": "^24.3.2"
+    "eslint-plugin-jest": "^24.3.6"
   },
   "peerDependencies": {
     "eslint": ">= 5"

@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import {parse} from 'intl-messageformat-parser';
+import {parse} from '@formatjs/icu-messageformat-parser';
 import {load} from 'js-yaml';
 
 let keys, timestamp;
