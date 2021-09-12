@@ -1,4 +1,4 @@
-# ESLint packages
+# ESLint packages [![GitHub license](https://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/bluecatengineering/eslint-packages/blob/master/LICENSE)
 
 [Rules](https://eslint.org/docs/developer-guide/working-with-rules) and
 [shareable configs](https://eslint.org/docs/developer-guide/shareable-configs) for BlueCat.
