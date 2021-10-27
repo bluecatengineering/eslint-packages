@@ -23,7 +23,10 @@ globals:
 
 parserOptions:
   sourceType: module
-  requireConfigFile: false
+  ecmaFeatures:
+    jsx: true
+  babelOptions:
+    rootMode: upward
 
 settings:
   react:
