@@ -24,6 +24,9 @@
     "rollup": "^2.58.3",
     "rollup-plugin-terser": "^7.0.2"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "commitlint": {
     "extends": [
       "@bluecateng/commitlint-config-bluecateng"
