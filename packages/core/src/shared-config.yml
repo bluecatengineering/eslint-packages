@@ -64,7 +64,7 @@ rules:
   babel/no-unused-expressions: warn
 
   import/export: error
-  import/extensions: [warn, never, {less: always}]
+  import/extensions: [warn, always, {js: never}]
   import/newline-after-import: warn
   import/no-mutable-exports: warn
   import/order: [warn, {newlines-between: always}]
