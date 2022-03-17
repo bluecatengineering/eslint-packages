@@ -16,7 +16,7 @@ export default {
 					context.report({
 						node,
 						message: 'Do not use post-increment, use pre-increment instead',
-						fix: fixer => fixer.replaceText(node, node.operator + node.argument.name),
+						fix: (fixer) => fixer.replaceText(node, node.operator + node.argument.name),
 					});
 				}
 			},

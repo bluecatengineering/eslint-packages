@@ -12,6 +12,7 @@
   "devDependencies": {
     "@bluecateng/commitlint-config-bluecateng": "^1.0.1",
     "@bluecateng/git-check-push": "^1.0.0",
+    "@bluecateng/prettier-config": "^1.0.0",
     "@commitlint/cli": "^16.0.3",
     "@commitlint/config-conventional": "^16.0.0",
     "@rollup/plugin-node-resolve": "^13.0.6",
@@ -27,6 +28,7 @@
   "workspaces": [
     "packages/*"
   ],
+  "prettier": "@bluecateng/prettier-config",
   "commitlint": {
     "extends": [
       "@bluecateng/commitlint-config-bluecateng"

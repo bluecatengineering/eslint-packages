@@ -15,13 +15,13 @@ export default {
 			rules: {
 				'@bluecateng/no-async': 'error',
 				'@bluecateng/no-postincrement': 'warn',
-			}
+			},
 		},
 		react: {
 			rules: {
 				'@bluecateng/intl-strings': 'error',
 				'@bluecateng/redux-connect-arguments': 'warn',
-			}
-		}
-	}
+			},
+		},
+	},
 };

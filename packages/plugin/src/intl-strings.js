@@ -6,7 +6,7 @@ import {load} from 'js-yaml';
 
 let keys, timestamp;
 
-const fileChanged = path => {
+const fileChanged = (path) => {
 	const ts = fs.statSync(path).mtime.getTime();
 	if (timestamp !== ts) {
 		timestamp = ts;
@@ -16,18 +16,18 @@ const fileChanged = path => {
 };
 
 const extractParams = (elements, params) => {
-	elements.forEach(e => {
+	elements.forEach((e) => {
 		if (e.type !== 0) {
 			params.push(e.value);
 			if (e.options) {
-				Object.values(e.options).forEach(o => extractParams(o.value, params));
+				Object.values(e.options).forEach((o) => extractParams(o.value, params));
 			}
 		}
 	});
 	return params;
 };
 
-const loadStrings = filePath => {
+const loadStrings = (filePath) => {
 	keys = {};
 	const strings = load(fs.readFileSync(filePath));
 	Object.entries(strings).forEach(([k, v]) => (keys[k] = v ? extractParams(parse(v), []) : []));
@@ -91,7 +91,7 @@ export default {
 					}
 					const arg1 = args[1];
 					if (arg1.type === 'ObjectExpression') {
-						const found = arg1.properties.map(p => {
+						const found = arg1.properties.map((p) => {
 							if (p.type !== 'Property') {
 								context.report(p, 'Must specify explicit key/value pairs');
 								return null;
@@ -103,7 +103,7 @@ export default {
 							}
 							return name;
 						});
-						const missing = params.filter(p => !found.includes(p));
+						const missing = params.filter((p) => !found.includes(p));
 						if (missing.length !== 0) {
 							context.report(arg1, 'Missing template arguments: ' + missing.join(', '));
 						}

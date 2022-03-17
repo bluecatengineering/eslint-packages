@@ -18,7 +18,7 @@ export default {
 		return {
 			ImportDeclaration(node) {
 				if (node.source.value === 'react-redux') {
-					node.specifiers.forEach(s => {
+					node.specifiers.forEach((s) => {
 						if (s.type === 'ImportSpecifier' && s.imported.name === 'connect') {
 							connectName = s.local.name;
 						}
