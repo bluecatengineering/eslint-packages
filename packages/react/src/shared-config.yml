@@ -37,6 +37,8 @@ rules:
 
   import/first: warn
 
+  jest/prefer-to-be: warn
+
   react/jsx-uses-react: off
   react/no-deprecated: warn
   react/no-unescaped-entities: off

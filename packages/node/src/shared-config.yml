@@ -10,3 +10,6 @@ plugins:
 env:
   node: true
   jest: true
+
+rules:
+  jest/prefer-to-be: warn
