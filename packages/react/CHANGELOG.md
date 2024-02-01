@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.0](https://github.com/bluecatengineering/eslint-packages/compare/v4.0.0...v4.1.0) (2024-02-01)
+
+**Note:** Version bump only for package @bluecateng/eslint-config-react
+
 # [4.0.0](https://github.com/bluecatengineering/eslint-packages/compare/v3.0.2...v4.0.0) (2022-10-06)
 
 - chore!: update eslint-plugin-jest to v27 ([a144813](https://github.com/bluecatengineering/eslint-packages/commit/a1448135e45c055ef97245008741650a78d7a5fd))

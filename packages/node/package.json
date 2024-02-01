@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/eslint-config-node",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "BlueCat shareable config for Node",
   "license": "ISC",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "README.md"
   ],
   "dependencies": {
-    "@bluecateng/eslint-config-core": "^4.0.0",
+    "@bluecateng/eslint-config-core": "^4.1.0",
     "eslint-plugin-jest": "^27.1.1"
   },
   "peerDependencies": {
