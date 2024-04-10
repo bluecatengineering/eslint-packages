@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 import {parse} from '@formatjs/icu-messageformat-parser';
-import {load} from 'js-yaml';
+import {parse as parseYaml} from 'yaml';
 
 let keys, timestamp;
 
@@ -29,7 +29,7 @@ const extractParams = (elements, params) => {
 
 const loadStrings = (filePath) => {
 	keys = {};
-	const strings = load(fs.readFileSync(filePath));
+	const strings = parseYaml(fs.readFileSync(filePath));
 	Object.entries(strings).forEach(([k, v]) => (keys[k] = v ? extractParams(parse(v), []) : []));
 };
 
@@ -48,14 +48,14 @@ export default {
 						context.report(node, 'Import strings as __');
 						return;
 					}
-					let spec0 = node.specifiers[0];
+					const spec0 = node.specifiers[0];
 					if (spec0.type === 'ImportDefaultSpecifier' && spec0.local.name !== '__') {
 						context.report(spec0, 'Import strings as __');
 					}
 					return;
 				}
 				if (node.specifiers.length !== 0) {
-					let spec0 = node.specifiers[0];
+					const spec0 = node.specifiers[0];
 					if (spec0.type === 'ImportDefaultSpecifier' && spec0.local.name === '__') {
 						context.report(spec0, 'Only strings can be imported as __');
 					}

@@ -1,12 +1,12 @@
 import yaml from '@rollup/plugin-yaml';
 import terser from '@rollup/plugin-terser';
 
-import pkg from './package.json' assert {type: 'json'};
+import pkg from './package.json' with {type: 'json'};
 
 export default {
 	input: './src/main',
 	external: Object.keys(pkg.dependencies),
-	output: {file: pkg.main, format: 'cjs', exports: 'default'},
+	output: {file: pkg.module, format: 'es', exports: 'default'},
 	plugins: [yaml(), terser()],
 	strictDeprecations: true,
 };

@@ -1,3 +1,73 @@
-import config from './shared-config.yml';
+import js from '@eslint/js';
+import prettierConfig from 'eslint-config-prettier';
+import babelPlugin from '@babel/eslint-plugin';
+import importPlugin from 'eslint-plugin-import';
+import promisePlugin from 'eslint-plugin-promise';
+import blueCatEngPlugin from '@bluecateng/eslint-plugin';
+import globals from 'globals';
 
-export default config;
+export default {
+	plugins: {'@bluecateng': blueCatEngPlugin, '@babel': babelPlugin, import: importPlugin, promise: promisePlugin},
+	languageOptions: {
+		globals: {
+			...globals.node,
+			...globals.es6,
+		},
+	},
+	rules: {
+		...js.configs.recommended.rules,
+		...blueCatEngPlugin.configs.recommended.rules,
+		...prettierConfig.rules,
+		'array-callback-return': 'warn',
+		'arrow-body-style': 'warn',
+		'consistent-return': 'error',
+		'dot-notation': ['warn', {allowPattern: '^[a-z]+(_[a-z]+)+$'}],
+		eqeqeq: 'error',
+		'no-alert': 'warn',
+		'no-array-constructor': 'warn',
+		'no-caller': 'error',
+		'no-duplicate-imports': 'error',
+		'no-else-return': 'warn',
+		'no-eval': 'error',
+		'no-extra-bind': 'error',
+		'no-implied-eval': 'error',
+		'no-lonely-if': 'warn',
+		'no-new-func': 'error',
+		'no-new-object': 'warn',
+		'no-new-wrappers': 'error',
+		'no-octal-escape': 'error',
+		'no-self-compare': 'error',
+		'no-undef-init': 'warn',
+		'no-unmodified-loop-condition': 'error',
+		'no-unneeded-ternary': 'warn',
+		'no-unused-vars': ['warn', {caughtErrors: 'none'}],
+		'no-useless-call': 'error',
+		'no-useless-computed-key': 'warn',
+		'no-useless-concat': 'warn',
+		'no-useless-constructor': 'warn',
+		'no-useless-rename': 'warn',
+		'no-useless-return': 'warn',
+		'no-var': 'warn',
+		'no-with': 'error',
+		'object-shorthand': 'warn',
+		'operator-assignment': 'warn',
+		'prefer-arrow-callback': 'warn',
+		'prefer-const': ['warn', {destructuring: 'all'}],
+		'prefer-promise-reject-errors': 'warn',
+		strict: 'warn',
+		yoda: ['warn', 'never', {exceptRange: true}],
+		'no-console': 'off',
+		'no-control-regex': 'off',
+		'no-unused-expressions': 'off',
+		'no-useless-escape': 'off',
+		'@babel/no-unused-expressions': 'warn',
+		'import/export': 'error',
+		'import/extensions': ['warn', 'always', {js: 'never'}],
+		'import/newline-after-import': 'warn',
+		'import/no-mutable-exports': 'warn',
+		'import/order': ['warn', {'newlines-between': 'always'}],
+		'promise/no-promise-in-callback': 'warn',
+		'promise/no-return-wrap': 'warn',
+		'promise/param-names': 'warn',
+	},
+};

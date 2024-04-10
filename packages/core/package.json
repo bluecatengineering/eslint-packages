@@ -3,7 +3,7 @@
   "version": "4.1.0",
   "description": "Core BlueCat shareable config",
   "license": "ISC",
-  "main": "index.js",
+  "module": "dist/index.js",
   "scripts": {
     "prepack": "rollup -c"
   },
@@ -16,17 +16,19 @@
     "eslintconfig"
   ],
   "files": [
-    "index.js",
+    "dist",
     "README.md"
   ],
   "dependencies": {
+    "@babel/eslint-plugin": "^7.25.9",
     "@bluecateng/eslint-plugin": "^4.1.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-babel": "^5.3.1",
+    "@eslint/js": "^9.3.0",
+    "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-promise": "^4.3.1"
+    "eslint-plugin-promise": "^7.2.1",
+    "globals": "^15.3.0"
   },
   "peerDependencies": {
-    "eslint": ">= 5"
+    "eslint": ">= 9"
   }
 }

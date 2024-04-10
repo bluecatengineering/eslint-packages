@@ -3,7 +3,7 @@
   "version": "4.1.0",
   "description": "BlueCat shareable config for React",
   "license": "ISC",
-  "main": "index.js",
+  "module": "dist/index.js",
   "scripts": {
     "prepack": "rollup -c"
   },
@@ -16,18 +16,19 @@
     "eslintconfig"
   ],
   "files": [
-    "index.js",
+    "dist",
     "README.md"
   ],
   "dependencies": {
     "@babel/eslint-parser": "^7.15.8",
     "@bluecateng/eslint-config-core": "^4.1.0",
-    "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-jest": "^27.1.1",
+    "@bluecateng/eslint-plugin": "^4.1.0",
+    "eslint-plugin-jest": "^28.2.0",
     "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.14.0"
   },
   "peerDependencies": {
-    "eslint": ">= 5"
+    "eslint": ">= 9"
   }
 }

@@ -3,7 +3,7 @@
   "version": "4.1.0",
   "description": "Custom rule definitions for BlueCat",
   "license": "ISC",
-  "main": "index.js",
+  "module": "dist/index.js",
   "scripts": {
     "prepack": "rollup -c"
   },
@@ -16,14 +16,14 @@
     "eslintplugin"
   ],
   "files": [
-    "index.js",
+    "dist",
     "README.md"
   ],
   "peerDependencies": {
-    "eslint": ">= 5"
+    "eslint": ">= 9"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0"
+    "yaml": "^2.7.0"
   },
   "devDependencies": {
     "@formatjs/icu-messageformat-parser": "^2.0.14"
