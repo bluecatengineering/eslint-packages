@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/bluecatengineering/eslint-packages/compare/v4.1.0...v5.0.0) (2025-02-03)
+
+### ⚠ BREAKING CHANGES
+
+- eslint@9 contains several breaking changes,
+  see https://eslint.org/docs/latest/use/configure/migration-guide.
+
+### Features
+
+- update eslint to v9 ([cc8d350](https://github.com/bluecatengineering/eslint-packages/commit/cc8d350ac06e7bde5fc3455a7e1aab364e890295))
+
 ## [4.1.0](https://github.com/bluecatengineering/eslint-packages/compare/v4.0.0...v4.1.0) (2024-02-01)
 
 **Note:** Version bump only for package @bluecateng/eslint-plugin
