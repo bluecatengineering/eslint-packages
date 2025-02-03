@@ -6,7 +6,7 @@ import pkg from './package.json' with {type: 'json'};
 export default {
 	input: './src/main',
 	external: Object.keys(pkg.dependencies),
-	output: {file: pkg.module, format: 'es', exports: 'default'},
+	output: {file: pkg.exports, format: 'es', exports: 'default'},
 	plugins: [yaml(), terser()],
 	strictDeprecations: true,
 };

@@ -3,7 +3,7 @@
   "version": "5.0.0",
   "description": "Custom rule definitions for BlueCat",
   "license": "ISC",
-  "module": "dist/index.js",
+  "exports": "./dist/index.js",
   "scripts": {
     "prepack": "rollup -c"
   },
