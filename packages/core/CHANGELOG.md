@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/bluecatengineering/eslint-packages/compare/v5.0.1...v5.0.2) (2025-02-03)
+
+### Bug Fixes
+
+- use correct extension for exported module ([05f2b59](https://github.com/bluecatengineering/eslint-packages/commit/05f2b594502642ca7d3b15be3c4c00ca2b2e7672))
+
 ## [5.0.1](https://github.com/bluecatengineering/eslint-packages/compare/v5.0.0...v5.0.1) (2025-02-03)
 
 ### Bug Fixes
