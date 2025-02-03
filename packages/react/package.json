@@ -3,7 +3,7 @@
   "version": "5.0.1",
   "description": "BlueCat shareable config for React",
   "license": "ISC",
-  "exports": "./dist/index.js",
+  "exports": "./dist/index.mjs",
   "scripts": {
     "prepack": "rollup -c"
   },

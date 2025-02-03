@@ -3,7 +3,7 @@
   "version": "5.0.1",
   "description": "Core BlueCat shareable config",
   "license": "ISC",
-  "exports": "./dist/index.js",
+  "exports": "./dist/index.mjs",
   "scripts": {
     "prepack": "rollup -c"
   },
