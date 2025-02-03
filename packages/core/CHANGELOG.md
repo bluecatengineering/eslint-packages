@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/bluecatengineering/eslint-packages/compare/v5.0.0...v5.0.1) (2025-02-03)
+
+### Bug Fixes
+
+- use correct property to define the entry point ([480dddc](https://github.com/bluecatengineering/eslint-packages/commit/480dddc06b627bff1ba42597d81978721cdfc1a0))
+
 ## [5.0.0](https://github.com/bluecatengineering/eslint-packages/compare/v4.1.0...v5.0.0) (2025-02-03)
 
 ### ⚠ BREAKING CHANGES
