@@ -62,7 +62,7 @@ export default {
 		'no-useless-escape': 'off',
 		'@babel/no-unused-expressions': 'warn',
 		'import/export': 'error',
-		'import/extensions': ['warn', 'always', {js: 'never'}],
+		'import/extensions': ['warn', 'ignorePackages', {js: 'never'}],
 		'import/newline-after-import': 'warn',
 		'import/no-mutable-exports': 'warn',
 		'import/order': ['warn', {'newlines-between': 'always'}],
