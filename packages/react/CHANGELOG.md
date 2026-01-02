@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/bluecatengineering/eslint-packages/compare/v5.0.4...v5.1.0) (2026-01-02)
+
+### Features
+
+- update eslint-plugin-react-hooks to v7 ([50c7a23](https://github.com/bluecatengineering/eslint-packages/commit/50c7a233e0621aa13da30d03d4dbd5dc6a45d69e))
+- update globals to v17 ([f364256](https://github.com/bluecatengineering/eslint-packages/commit/f364256867f13cb5f1278f6408033917812ede99))
+
 ## [5.0.4](https://github.com/bluecatengineering/eslint-packages/compare/v5.0.3...v5.0.4) (2025-09-03)
 
 **Note:** Version bump only for package @bluecateng/eslint-config-react

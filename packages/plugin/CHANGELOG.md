@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/bluecatengineering/eslint-packages/compare/v5.0.4...v5.1.0) (2026-01-02)
+
+### Features
+
+- update @formatjs/icu-messageformat-parser to v3 ([4d8b3f1](https://github.com/bluecatengineering/eslint-packages/commit/4d8b3f193be62c1def256c17bda48f10a36293b8))
+
 ## [5.0.2](https://github.com/bluecatengineering/eslint-packages/compare/v5.0.1...v5.0.2) (2025-02-03)
 
 ### Bug Fixes
