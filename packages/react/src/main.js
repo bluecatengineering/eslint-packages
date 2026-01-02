@@ -38,5 +38,9 @@ export default {
 		'jest/prefer-to-be': 'warn',
 		'react/no-deprecated': 'warn',
 		'react/no-unescaped-entities': 'off',
+		'react-hooks/preserve-manual-memoization': 'off',
+		'react-hooks/purity': 'off',
+		'react-hooks/refs': 'off',
+		'react-hooks/set-state-in-effect': 'off',
 	},
 };
