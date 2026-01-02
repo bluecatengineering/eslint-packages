@@ -26,6 +26,6 @@
     "yaml": "^2.7.0"
   },
   "devDependencies": {
-    "@formatjs/icu-messageformat-parser": "^2.0.14"
+    "@formatjs/icu-messageformat-parser": "^3.2.1"
   }
 }
