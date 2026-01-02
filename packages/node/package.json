@@ -22,7 +22,7 @@
   "dependencies": {
     "@bluecateng/eslint-config-core": "^5.0.4",
     "eslint-plugin-jest": "^29.0.1",
-    "globals": "^16.1.0"
+    "globals": "^17.0.0"
   },
   "peerDependencies": {
     "eslint": ">= 9"
