@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/bluecatengineering/eslint-packages/compare/v5.1.0...v5.1.1) (2026-01-02)
+
+### Bug Fixes
+
+- disable React compiler and other rules that produce too many false positives ([edfe2af](https://github.com/bluecatengineering/eslint-packages/commit/edfe2af14d76b2662274175a96256d748e840536))
+
 ## [5.1.0](https://github.com/bluecatengineering/eslint-packages/compare/v5.0.4...v5.1.0) (2026-01-02)
 
 ### Features
