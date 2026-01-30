@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/eslint-config-react",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "description": "BlueCat shareable config for React",
   "license": "ISC",
   "exports": "./dist/index.mjs",
@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "@babel/eslint-parser": "^7.15.8",
-    "@bluecateng/eslint-config-core": "^5.1.0",
+    "@bluecateng/eslint-config-core": "^5.1.2",
     "@bluecateng/eslint-plugin": "^5.1.0",
     "eslint-plugin-jest": "^29.0.1",
     "eslint-plugin-react": "^7.26.1",

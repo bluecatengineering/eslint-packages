@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/eslint-config-core",
-  "version": "5.1.0",
+  "version": "5.1.2",
   "description": "Core BlueCat shareable config",
   "license": "ISC",
   "exports": "./dist/index.mjs",

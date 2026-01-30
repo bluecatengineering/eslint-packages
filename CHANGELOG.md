@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.2](https://github.com/bluecatengineering/eslint-packages/compare/v5.1.1...v5.1.2) (2026-01-30)
+
+### Bug Fixes
+
+- replace deprecated rule no-new-object ([5af2c21](https://github.com/bluecatengineering/eslint-packages/commit/5af2c218bb33a2eb046402e0251bbe707a623207))
+
 ## [5.1.1](https://github.com/bluecatengineering/eslint-packages/compare/v5.1.0...v5.1.1) (2026-01-02)
 
 ### Bug Fixes
