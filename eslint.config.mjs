@@ -18,6 +18,6 @@ export default [
 		},
 	},
 	{
-		ignores: ['**/index.js'],
+		ignores: ['**/index.mjs'],
 	},
 ];
