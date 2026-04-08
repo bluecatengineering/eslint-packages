@@ -3,6 +3,8 @@
   "description": "Packages for ESLint",
   "private": true,
   "scripts": {
+    "lint": "eslint",
+    "lint-ci": "eslint -f @microsoft/eslint-formatter-sarif -o build/eslint-results.sarif",
     "prepare": "husky"
   },
   "repository": {
@@ -16,6 +18,7 @@
     "@bluecateng/prettier-config": "^1.0.0",
     "@commitlint/cli": "^20.3.0",
     "@commitlint/config-conventional": "^20.3.0",
+    "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^1.0.0",
     "@rollup/plugin-yaml": "^4.1.2",
