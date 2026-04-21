@@ -38,6 +38,7 @@ export default {
 		'jest/prefer-to-be': 'warn',
 		'react/no-deprecated': 'warn',
 		'react/no-unescaped-entities': 'off',
+		'react-hooks/immutability': 'off',
 		'react-hooks/preserve-manual-memoization': 'off',
 		'react-hooks/purity': 'off',
 		'react-hooks/refs': 'off',
