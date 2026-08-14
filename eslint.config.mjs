@@ -1,5 +1,4 @@
 import js from '@eslint/js';
-import babelParser from '@babel/eslint-parser';
 
 export default [
 	js.configs.recommended,
@@ -13,7 +12,6 @@ export default [
 	{
 		files: ['**/*.mjs', 'packages/*/src/**/*.js'],
 		languageOptions: {
-			parser: babelParser,
 			sourceType: 'module',
 		},
 	},
