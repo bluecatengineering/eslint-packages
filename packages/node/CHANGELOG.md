@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/bluecatengineering/eslint-packages/compare/v5.1.4...v6.0.0) (2026-08-14)
+
+**Note:** Version bump only for package @bluecateng/eslint-config-node
+
 ## [5.1.3](https://github.com/bluecatengineering/eslint-packages/compare/v5.1.2...v5.1.3) (2026-04-08)
 
 **Note:** Version bump only for package @bluecateng/eslint-config-node

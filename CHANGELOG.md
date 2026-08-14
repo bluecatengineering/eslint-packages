@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/bluecatengineering/eslint-packages/compare/v5.1.4...v6.0.0) (2026-08-14)
+
+### ⚠ BREAKING CHANGES
+
+- @bluecateng/eslint-config-react and @bluecateng/eslint-config-core
+  no longer configure a Babel-aware parser or the @babel/no-unused-expressions rule.
+  JSX continues to work via espree's native JSX support, but non-standard/experimental
+  syntax that only Babel understands (e.g. do-expressions, decorators) will now fail
+  to parse. Consumers relying on such syntax must configure their own parser
+  (e.g. @babel/eslint-parser) for the affected files.
+
+### Bug Fixes
+
+- remove @babel/eslint-parser and @babel/eslint-plugin ([e6fcec0](https://github.com/bluecatengineering/eslint-packages/commit/e6fcec0a3d026a2e9fe3d89b3bafcbf8d4a4fde9))
+
 ## [5.1.4](https://github.com/bluecatengineering/eslint-packages/compare/v5.1.3...v5.1.4) (2026-04-21)
 
 ### Bug Fixes
