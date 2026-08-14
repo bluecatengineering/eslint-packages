@@ -1,13 +1,12 @@
 import js from '@eslint/js';
 import prettierConfig from 'eslint-config-prettier';
-import babelPlugin from '@babel/eslint-plugin';
 import importPlugin from 'eslint-plugin-import';
 import promisePlugin from 'eslint-plugin-promise';
 import blueCatEngPlugin from '@bluecateng/eslint-plugin';
 import globals from 'globals';
 
 export default {
-	plugins: {'@bluecateng': blueCatEngPlugin, '@babel': babelPlugin, import: importPlugin, promise: promisePlugin},
+	plugins: {'@bluecateng': blueCatEngPlugin, import: importPlugin, promise: promisePlugin},
 	languageOptions: {
 		globals: {
 			...globals.node,
@@ -58,9 +57,8 @@ export default {
 		yoda: ['warn', 'never', {exceptRange: true}],
 		'no-console': 'off',
 		'no-control-regex': 'off',
-		'no-unused-expressions': 'off',
+		'no-unused-expressions': 'warn',
 		'no-useless-escape': 'off',
-		'@babel/no-unused-expressions': 'warn',
 		'import/export': 'error',
 		'import/extensions': ['warn', 'ignorePackages', {js: 'never'}],
 		'import/newline-after-import': 'warn',

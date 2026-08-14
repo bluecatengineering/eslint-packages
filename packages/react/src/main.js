@@ -4,19 +4,14 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 import blueCatEngPlugin from '@bluecateng/eslint-plugin';
 import blueCatEngCore from '@bluecateng/eslint-config-core';
-import babelParser from '@babel/eslint-parser';
 
 export default {
 	plugins: {...blueCatEngCore.plugins, jest: jestPlugin, react: reactPlugin, 'react-hooks': reactHooksPlugin},
 	languageOptions: {
-		parser: babelParser,
 		sourceType: 'module',
 		parserOptions: {
 			ecmaFeatures: {
 				jsx: true,
-			},
-			babelOptions: {
-				rootMode: 'upward',
 			},
 		},
 		globals: {
