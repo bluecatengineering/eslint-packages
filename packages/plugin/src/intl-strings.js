@@ -35,7 +35,7 @@ const loadStrings = (filePath) => {
 
 export default {
 	create(context) {
-		const dirname = path.dirname(context.getFilename());
+		const dirname = path.dirname(context.filename);
 		return {
 			ImportDeclaration(node) {
 				const modulePath = node.source.value;
