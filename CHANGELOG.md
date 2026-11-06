@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/bluecatengineering/eslint-packages/compare/v6.0.0...v6.0.1) (2026-11-06)
+
+### Bug Fixes
+
+- use context.filename for ESLint 10 compatibility ([159d9ea](https://github.com/bluecatengineering/eslint-packages/commit/159d9eae5b1dfd53ed1d76c0b9649795231f1af0))
+
 ## [6.0.0](https://github.com/bluecatengineering/eslint-packages/compare/v5.1.4...v6.0.0) (2026-08-14)
 
 ### ⚠ BREAKING CHANGES
