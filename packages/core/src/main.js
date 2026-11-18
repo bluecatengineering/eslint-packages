@@ -1,12 +1,12 @@
 import js from '@eslint/js';
 import prettierConfig from 'eslint-config-prettier';
-import importPlugin from 'eslint-plugin-import';
+import {importX} from 'eslint-plugin-import-x';
 import promisePlugin from 'eslint-plugin-promise';
 import blueCatEngPlugin from '@bluecateng/eslint-plugin';
 import globals from 'globals';
 
 export default {
-	plugins: {'@bluecateng': blueCatEngPlugin, import: importPlugin, promise: promisePlugin},
+	plugins: {'@bluecateng': blueCatEngPlugin, 'import-x': importX, promise: promisePlugin},
 	languageOptions: {
 		globals: {
 			...globals.node,
@@ -59,11 +59,11 @@ export default {
 		'no-control-regex': 'off',
 		'no-unused-expressions': 'warn',
 		'no-useless-escape': 'off',
-		'import/export': 'error',
-		'import/extensions': ['warn', 'ignorePackages', {js: 'never'}],
-		'import/newline-after-import': 'warn',
-		'import/no-mutable-exports': 'warn',
-		'import/order': ['warn', {'newlines-between': 'always'}],
+		'import-x/export': 'error',
+		'import-x/extensions': ['warn', 'ignorePackages', {js: 'never'}],
+		'import-x/newline-after-import': 'warn',
+		'import-x/no-mutable-exports': 'warn',
+		'import-x/order': ['warn', {'newlines-between': 'always'}],
 		'promise/no-promise-in-callback': 'warn',
 		'promise/no-return-wrap': 'warn',
 		'promise/param-names': 'warn',

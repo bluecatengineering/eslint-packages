@@ -29,7 +29,7 @@ export default {
 		...reactPlugin.configs.flat['jsx-runtime'].rules,
 		...reactHooksPlugin.configs.recommended.rules,
 		'no-console': 'warn',
-		'import/first': 'warn',
+		'import-x/first': 'warn',
 		'jest/prefer-to-be': 'warn',
 		'react/no-deprecated': 'warn',
 		'react/no-unescaped-entities': 'off',
