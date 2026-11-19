@@ -20,6 +20,6 @@
     "README.md"
   ],
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": ">= 10"
   }
 }
