@@ -20,8 +20,11 @@ $ npm i -D @bluecateng/eslint-config-[CONFIG]
 
 ## Usage
 
-Add an ESLint config to your `.eslintrc.yml`:
+Requires ESLint 10 or later. Add the config to your `eslint.config.js`:
 
-```yaml
-extends: '@bluecateng/[CONFIG]'
+```js
+import {defineConfig} from 'eslint/config';
+import bluecatConfig from '@bluecateng/eslint-config-[CONFIG]';
+
+export default defineConfig([bluecatConfig]);
 ```
