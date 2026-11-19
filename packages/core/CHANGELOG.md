@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/bluecatengineering/eslint-packages/compare/v6.0.1...v7.0.0) (2026-11-19)
+
+### ⚠ BREAKING CHANGES
+
+- requires ESLint 10 or later. @eslint/js v10 changes the
+  recommended rule set, which may report new problems.
+- the `import` plugin is no longer registered. Configs that
+  reference `import/*` rules must rename them to `import-x/*`.
+
+### Features
+
+- replace eslint-plugin-import with eslint-plugin-import-x ([3219a0f](https://github.com/bluecatengineering/eslint-packages/commit/3219a0f078560ed2e1f9d6c85956748038ab8557))
+- update @eslint/js to v10 ([9e4f7b7](https://github.com/bluecatengineering/eslint-packages/commit/9e4f7b77998d95eb101a68bf0063480a3814ab60))
+
 ## [6.0.1](https://github.com/bluecatengineering/eslint-packages/compare/v6.0.0...v6.0.1) (2026-11-06)
 
 **Note:** Version bump only for package @bluecateng/eslint-config-core

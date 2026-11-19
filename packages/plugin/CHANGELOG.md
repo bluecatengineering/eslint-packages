@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/bluecatengineering/eslint-packages/compare/v6.0.1...v7.0.0) (2026-11-19)
+
+### ⚠ BREAKING CHANGES
+
+- @bluecateng/eslint-plugin now requires ESLint 10 or later.
+- the `@bluecateng/intl-strings` rule no longer exists.
+  Remove it from any ESLint configuration that references it.
+
+### Features
+
+- remove intl-strings rule from plugin ([ad6d703](https://github.com/bluecatengineering/eslint-packages/commit/ad6d703afdb6f9cdb6a7d88abc1ef22e2a2d6c82))
+- require eslint 10 ([85d6289](https://github.com/bluecatengineering/eslint-packages/commit/85d6289fbb0d0656d36a2937754ec9cdf7bc67de))
+
 ## [6.0.1](https://github.com/bluecatengineering/eslint-packages/compare/v6.0.0...v6.0.1) (2026-11-06)
 
 ### Bug Fixes

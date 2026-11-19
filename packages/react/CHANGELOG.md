@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/bluecatengineering/eslint-packages/compare/v6.0.1...v7.0.0) (2026-11-19)
+
+### ⚠ BREAKING CHANGES
+
+- requires ESLint 10 or later. eslint-plugin-react and
+  eslint-plugin-react-hooks are replaced by @eslint-react/eslint-plugin, so
+  `react/*` and `react-hooks/*` rule names must be renamed to
+  `@eslint-react/*` in configs and eslint-disable comments. Rules without
+  an equivalent (prop-types, display-name, no-unknown-property,
+  jsx-no-target-blank) are no longer enabled. The React version is read
+  from `settings['react-x'].version`, or detected from the installed react
+  package.
+- the `import` plugin is no longer registered. Configs that
+  reference `import/*` rules must rename them to `import-x/*`.
+
+### Features
+
+- replace eslint-plugin-import with eslint-plugin-import-x ([3219a0f](https://github.com/bluecatengineering/eslint-packages/commit/3219a0f078560ed2e1f9d6c85956748038ab8557))
+- replace eslint-plugin-react with @eslint-react/eslint-plugin ([48b7a28](https://github.com/bluecatengineering/eslint-packages/commit/48b7a288b800be9a03827c7189007e9258b5c6a8))
+
 ## [6.0.1](https://github.com/bluecatengineering/eslint-packages/compare/v6.0.0...v6.0.1) (2026-11-06)
 
 **Note:** Version bump only for package @bluecateng/eslint-config-react

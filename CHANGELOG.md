@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/bluecatengineering/eslint-packages/compare/v6.0.1...v7.0.0) (2026-11-19)
+
+### ⚠ BREAKING CHANGES
+
+- @bluecateng/eslint-plugin now requires ESLint 10 or later.
+- requires ESLint 10 or later. @eslint/js v10 changes the
+  recommended rule set, which may report new problems.
+- requires ESLint 10 or later. eslint-plugin-react and
+  eslint-plugin-react-hooks are replaced by @eslint-react/eslint-plugin, so
+  `react/*` and `react-hooks/*` rule names must be renamed to
+  `@eslint-react/*` in configs and eslint-disable comments. Rules without
+  an equivalent (prop-types, display-name, no-unknown-property,
+  jsx-no-target-blank) are no longer enabled. The React version is read
+  from `settings['react-x'].version`, or detected from the installed react
+  package.
+- the `@bluecateng/intl-strings` rule no longer exists.
+  Remove it from any ESLint configuration that references it.
+- the `import` plugin is no longer registered. Configs that
+  reference `import/*` rules must rename them to `import-x/*`.
+
+### Features
+
+- remove intl-strings rule from plugin ([ad6d703](https://github.com/bluecatengineering/eslint-packages/commit/ad6d703afdb6f9cdb6a7d88abc1ef22e2a2d6c82))
+- replace eslint-plugin-import with eslint-plugin-import-x ([3219a0f](https://github.com/bluecatengineering/eslint-packages/commit/3219a0f078560ed2e1f9d6c85956748038ab8557))
+- replace eslint-plugin-react with @eslint-react/eslint-plugin ([48b7a28](https://github.com/bluecatengineering/eslint-packages/commit/48b7a288b800be9a03827c7189007e9258b5c6a8))
+- require eslint 10 ([85d6289](https://github.com/bluecatengineering/eslint-packages/commit/85d6289fbb0d0656d36a2937754ec9cdf7bc67de))
+- update @eslint/js to v10 ([9e4f7b7](https://github.com/bluecatengineering/eslint-packages/commit/9e4f7b77998d95eb101a68bf0063480a3814ab60))
+
 ## [6.0.1](https://github.com/bluecatengineering/eslint-packages/compare/v6.0.0...v6.0.1) (2026-11-06)
 
 ### Bug Fixes
