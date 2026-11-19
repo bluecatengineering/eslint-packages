@@ -21,11 +21,5 @@
   ],
   "peerDependencies": {
     "eslint": ">= 9"
-  },
-  "dependencies": {
-    "yaml": "^2.7.0"
-  },
-  "devDependencies": {
-    "@formatjs/icu-messageformat-parser": "^3.2.1"
   }
 }
